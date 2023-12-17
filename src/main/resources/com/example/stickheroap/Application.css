@@ -1,0 +1,4 @@
+.root {
+    -fx-background-image: url("/com/example/stickheroap/images/background.jpg"), no-repeat;
+    -fx-background-size: cover;
+}

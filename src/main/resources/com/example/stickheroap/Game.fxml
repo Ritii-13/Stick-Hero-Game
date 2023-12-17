@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Copyright (c) 2017, Gluon and/or its affiliates.
+    All rights reserved. Use is subject to license terms.
+
+    This file is available and licensed under the following license:
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+
+   - Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+   - Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in
+     the documentation and/or other materials provided with the distribution.
+   - Neither the name of Oracle Corporation and Gluon nor the names of its
+     contributors may be used to endorse or promote products derived
+     from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<!--<?import com.gluonhq.charm.glisten.mvc.View?>-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stickheroap.PlayController">
+   <padding>
+      <Insets left="26.0" top="-488.0" />
+   </padding>
+   <Text fx:id="score" strokeType="OUTSIDE" strokeWidth="2.0" text="0" textAlignment="CENTER" wrappingWidth="50.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="550.0">
+      <font>
+         <Font name="Lucida Console" size="35.0" />
+      </font>
+   </Text>
+   <ImageView fitHeight="40.0" fitWidth="40.0" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="500.0">
+      <Image url="@assets/cherry.png" />
+   </ImageView>
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="XXX" textAlignment="CENTER" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="515.0">
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font>
+   </Text>
+   <Rectangle fx:id="platform1" arcHeight="5.0" arcWidth="5.0" fill="#0a0b0b" height="225.0" opacity="0.68" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="125.0" AnchorPane.leftAnchor="-27.0" AnchorPane.topAnchor="863.0" />
+   <Rectangle fx:id="platform2" arcHeight="5.0" arcWidth="5.0" fill="#0a0b0b" height="225.0" layoutX="9.0" layoutY="385.0" opacity="0.68" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="50.0" AnchorPane.leftAnchor="230.0" AnchorPane.topAnchor="863.0" />
+   <Rectangle fx:id="center" fill="#ea1d06" height="10.0" stroke="#282727" strokeType="INSIDE" width="10.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="863.0" />
+   <ImageView fx:id="hero" fitHeight="60.0" fitWidth="80.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="804.0">
+      <Image url="@assets/hero.png" />
+   </ImageView>
+   <Rectangle fx:id="stick" arcHeight="5.0" arcWidth="5.0" fill="#e40303" height="6.0" stroke="BLACK" strokeType="INSIDE" width="6.0" AnchorPane.bottomAnchor="0.599999999999909" AnchorPane.leftAnchor="87.0" AnchorPane.rightAnchor="210.8" AnchorPane.topAnchor="857.0" />
+   <ImageView fx:id="cherry" fitHeight="22.0" fitWidth="22.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="870.0">
+      <Image url="@assets/cherry.png" />
+   </ImageView>
+   <Rectangle fx:id="platform2_inner" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutY="393.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="258.0" />
+   <Rectangle fx:id="platform2_outer" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="-1.0" layoutY="316.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="309.0" />
+</AnchorPane>
